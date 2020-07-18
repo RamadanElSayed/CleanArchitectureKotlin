@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_nav"
+    app:startDestination="@id/popularPeople">
+
+    <fragment
+        android:id="@+id/popularPeople"
+        android:name="com.kotlin.cleanarchitecturekotlin.presentation.fragments.PopularPeopleFragment" >
+        <action
+            android:id="@+id/action_popular_people_to_details_peopleFragment"
+            app:destination="@id/detailsPopular"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" >
+        <argument android:name="personId"
+            android:defaultValue="personId"
+            app:argType="string"/>
+        <argument android:name="name"
+            android:defaultValue="name"
+            app:argType="string"/>
+        <argument android:name="popularity"
+            android:defaultValue="popularity"
+            app:argType="string"/>
+        <argument android:name="img"
+            android:defaultValue="img"
+            app:argType="string"/>
+        <argument android:name="department"
+            android:defaultValue="department"
+            app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsPopular"
+        android:name="com.kotlin.cleanarchitecturekotlin.presentation.fragments.DetailsPopularPeopleFragment"
+        />
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="Search">Search</string>
+    <string name="PleaseCharacters">Please enter at least 3 characters!</string>
+    <string name="Check_network_connection">Check network connection !</string>
+    <string name="Images">Images</string>
+
+</resources>
